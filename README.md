@@ -7,7 +7,7 @@ List Of Member: <br/>
 Lê Trương Tín (Student1470125) <br/>
 Lý Quốc Khánh (Student1477161) <br/>
 Đoàn Minh Vũ (Student1477165) <br/>
-Huỳnh Văn Lời (Student1442255) =======================================
+Huỳnh Văn Lời (Student1442255) ======================================= <br/>
 Documentations : https://github.com/tinle0909/cake-shop/tree/main/Documentations
 
 =======================================
