@@ -1,6 +1,6 @@
 # cake-shop
-Supervisor : LÊ THANH NHÂN
-Semester : I
+Supervisor : LÊ THANH NHÂN <br/>
+Semester : I <br/>
 Batch No : T5.2306.E1
 Group No: : 07
 List Of Member:
