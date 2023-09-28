@@ -19,3 +19,7 @@ Published website :
 =======================================
 
 Thank you for visit our website.
+<<<<<<< HEAD
+=======
+
+> > > > > > > 18e8ed4d4c8edb36303f3346574838f0ee073720
