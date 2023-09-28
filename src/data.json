@@ -1,0 +1,575 @@
+[
+  {
+    "name": "Chocolate Cake",
+    "price": "25",
+    "id": 1,
+    "brand": "Bakery A",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "description": "A delicious chocolate cake perfect for birthdays",
+    "category": "birthday"
+  },
+  {
+    "name": "Vanilla Cake",
+    "price": "20",
+    "id": 2,
+    "brand": "Bakery B",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+    "description": "A classic vanilla cake with buttercream frosting"
+  },
+  {
+    "name": "Red Velvet Cake",
+    "price": "30",
+    "id": 3,
+    "brand": "Bakery C",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A rich and moist red velvet cake with cream cheese frosting"
+  },
+  {
+    "name": "Strawberry Cake",
+    "price": "22",
+    "id": 4,
+    "brand": "Bakery D",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A fruity and refreshing strawberry cake with fresh strawberries"
+  },
+  {
+    "name": "Carrot Cake",
+    "price": "28",
+    "id": 5,
+    "brand": "Bakery E",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A moist carrot cake with cream cheese frosting"
+  },
+  {
+    "name": "Lemon Cake",
+    "price": "26",
+    "id": 6,
+    "brand": "Bakery F",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A tangy and zesty lemon cake with lemon glaze"
+  },
+  {
+    "name": "Banana Cake",
+    "price": "23",
+    "id": 7,
+    "brand": "Bakery G",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A moist banana cake with cream cheese frosting"
+  },
+  {
+    "name": "Coconut Cake",
+    "price": "27",
+    "id": 8,
+    "brand": "Bakery H",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A tropical coconut cake with coconut cream filling"
+  },
+  {
+    "name": "Pineapple Cake",
+    "price": "24",
+    "id": 9,
+    "brand": "Bakery I",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A refreshing pineapple cake with whipped cream frosting"
+  },
+  {
+    "name": "Marble Cake",
+    "price": "29",
+    "id": 10,
+    "brand": "Bakery J",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A swirl of chocolate and vanilla in a moist marble cake"
+  },
+  {
+    "name": "Mocha Cake",
+    "price": "25",
+    "id": 11,
+    "brand": "Bakery K",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A rich and decadent mocha cake with coffee-flavored frosting"
+  },
+  {
+    "name": "Raspberry Cake",
+    "price": "22",
+    "id": 12,
+    "brand": "Bakery L",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A delightful raspberry cake with raspberry buttercream"
+  },
+  {
+    "name": "Oreo Cake",
+    "price": "27",
+    "id": 13,
+    "brand": "Bakery M",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A cookies and cream Oreo cake with whipped cream frosting"
+  },
+  {
+    "name": "Caramel Cake",
+    "price": "26",
+    "id": 14,
+    "brand": "Bakery N",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A sweet and gooey caramel cake with caramel drizzle"
+  },
+  {
+    "name": "Peanut Butter Cake",
+    "price": "23",
+    "id": 15,
+    "brand": "Bakery O",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+
+    "description": "A decadent peanut butter cake with chocolate ganache"
+  },
+  {
+    "name": "Matcha Cake",
+    "price": "28",
+    "id": 16,
+    "brand": "Bakery P",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "birthday",
+    "description": "A unique matcha green tea cake with matcha buttercream"
+  },
+  {
+    "name": "Classic White Wedding Cake",
+    "price": "150",
+    "brand": "Wedding Cakes by Karen",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "17"
+  },
+  {
+    "name": "Chocolate Ganache Wedding Cake",
+    "price": "200",
+    "brand": "Sweet Confections",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "18"
+  },
+  {
+    "name": "Vanilla Buttercream Wedding Cake",
+    "price": "180",
+    "brand": "The Cake Shop",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "19"
+  },
+  {
+    "name": "Red Velvet Wedding Cake",
+    "price": "170",
+    "brand": "Delicious Delights",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "20"
+  },
+  {
+    "name": "Lemon Raspberry Wedding Cake",
+    "price": "190",
+    "brand": "Cakes by Lisa",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "21"
+  },
+  {
+    "name": "Strawberry Shortcake Wedding Cake",
+    "price": "160",
+    "brand": "Sweet Treats Bakery",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "22"
+  },
+  {
+    "name": "Marble Wedding Cake",
+    "price": "175",
+    "brand": "Creative Cakes",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "23"
+  },
+  {
+    "name": "Coconut Cream Wedding Cake",
+    "price": "195",
+    "brand": "Flour Power Cakes",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "24"
+  },
+  {
+    "name": "Almond Amaretto Wedding Cake",
+    "price": "210",
+    "brand": "Cakes by Amy",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "25"
+  },
+  {
+    "name": "Champagne and Strawberry Wedding Cake",
+    "price": "220",
+    "brand": "Sweet Sensations",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "26"
+  },
+  {
+    "name": "Orange Blossom Wedding Cake",
+    "price": "185",
+    "brand": "Sweet Dreams Bakery",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "27"
+  },
+  {
+    "name": "Rustic Naked Wedding Cake",
+    "price": "230",
+    "brand": "Farmhouse Cakes",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "28"
+  },
+  {
+    "name": "Pink Champagne Wedding Cake",
+    "price": "240",
+    "brand": "Love and Cake",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "29"
+  },
+  {
+    "name": "Mint Chocolate Chip Wedding Cake",
+    "price": "200",
+    "brand": "Choco Delights",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "30"
+  },
+  {
+    "name": "Lavender Lemon Wedding Cake",
+    "price": "195",
+    "brand": "Sweet Aromas Bakery",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "31"
+  },
+  {
+    "name": "Almond Raspberry Wedding Cake",
+    "price": "210",
+    "brand": "Raspberry Delights",
+    "image": "https://images.unsplash.com/photo-1559373098-e1caaccae791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fEFubml2ZXJzYXJ5JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    "category": "marriage",
+    "id": "32"
+  },
+  {
+    "name": "Anniversary Cake 1",
+    "price": "25.99",
+    "id": 33,
+    "brand": "Cake Brand 1",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-2-Champagne-Bottles.jpg",
+    "description": "Delicious anniversary cake with vanilla flavor"
+  },
+  {
+    "name": "Anniversary Cake 2",
+    "price": "32.50",
+    "id": 34,
+    "brand": "Cake Brand 2",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-3-Mom-and-Dads-50th.jpg",
+    "description": "Decadent anniversary cake with chocolate flavor"
+  },
+  {
+    "name": "Anniversary Cake 3",
+    "price": "28.75",
+    "id": 35,
+    "brand": "Cake Brand 3",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-1-Roses-and-Scrolls.jpg",
+    "description": "Elegant anniversary cake with strawberry flavor"
+  },
+  {
+    "name": "Anniversary Cake 4",
+    "price": "30.00",
+    "id": 36,
+    "brand": "Cake Brand 4",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2022/02/1-edit.jpg",
+    "description": "Classic anniversary cake with buttercream frosting"
+  },
+  {
+    "name": "Anniversary Cake 5",
+    "price": "27.99",
+    "id": 37,
+    "brand": "Cake Brand 5",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-1001-Emerald-Anniversary.jpg",
+    "description": "Unique anniversary cake with cream cheese filling"
+  },
+  {
+    "name": "Anniversary Cake 6",
+    "price": "24.50",
+    "id": 38,
+    "brand": "Cake Brand 6",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2022/03/DH3A6752-edit.jpg",
+    "description": "Delicate anniversary cake with lemon flavor"
+  },
+  {
+    "name": "Anniversary Cake 7",
+    "price": "29.99",
+    "id": 39,
+    "brand": "Cake Brand 7",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-2000-Teal-Daisies.jpg",
+    "description": "Exquisite anniversary cake with raspberry filling"
+  },
+  {
+    "name": "Anniversary Cake 8",
+    "price": "31.25",
+    "id": 40,
+    "brand": "Cake Brand 8",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-4001-Fondant-Pink-Cherry-Blossoms.jpg",
+    "description": "Luxurious anniversary cake with caramel drizzle"
+  },
+  {
+    "name": "Anniversary Cake 9",
+    "price": "26.50",
+    "id": 41,
+    "brand": "Cake Brand 9",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2022/03/DH3A6520-edit.jpg",
+    "description": "Indulgent anniversary cake with hazelnut cream"
+  },
+  {
+    "name": "Anniversary Cake 10",
+    "price": "33.75",
+    "id": 42,
+    "brand": "Cake Brand 10",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-9001-T-4-Golden-Perals.jpg",
+    "description": "Gourmet anniversary cake with pistachio flavor"
+  },
+  {
+    "name": "Anniversary Cake 11",
+    "price": "23.99",
+    "id": 43,
+    "brand": "Cake Brand 11",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-9002-T-7-25-Years-of-Bliss.jpg",
+    "description": "Artistic anniversary cake with marzipan decoration"
+  },
+  {
+    "name": "Anniversary Cake 12",
+    "price": "32.00",
+    "id": 44,
+    "brand": "Cake Brand 12",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-9003-T-1-Joyous-50th.jpg",
+    "description": "Intricate anniversary cake with fondant icing"
+  },
+  {
+    "name": "Anniversary Cake 13",
+    "price": "28.50",
+    "id": 45,
+    "brand": "Cake Brand 13",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2018/08/Anniv-9004-T-7-Passionate-50th.jpg",
+    "description": "Flavorful anniversary cake with coconut filling"
+  },
+  {
+    "name": "Anniversary Cake 14",
+    "price": "30.99",
+    "id": 46,
+    "brand": "Cake Brand 14",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2022/02/DH3A2526-edit.jpg",
+    "description": "Delightful anniversary cake with passion fruit cream"
+  },
+  {
+    "name": "Anniversary Cake 15",
+    "price": "27.25",
+    "id": 47,
+    "brand": "Cake Brand 15",
+    "category": "anniversary",
+    "image": "https://www.omahacakegallery.com/wp-content/uploads/2022/05/DH3A7120-edit.jpg",
+    "description": "Irresistible anniversary cake with almond crust"
+  },
+  {
+    "name": "Anniversary Cake 16",
+    "price": "25.50",
+    "id": 48,
+    "brand": "Cake Brand 16",
+    "category": "anniversary",
+    "image": "https://bobthebakerboy.com/img/cakes/6348_20230712100001-9659_20221003161017-Lucky%20Yellow%20Ombre%20Cake%20with%20Gold%20Balls%20and%20Company%20Logo.webp",
+    "description": "Mouthwatering anniversary cake with red velvet sponge"
+  },
+  {
+    "name": "Engagement Cake 1",
+    "price": "20",
+    "id": 49,
+    "brand": "Brand A",
+    "category": "engagement",
+    "image": "https://example.com/cake1.jpg",
+    "description": "Delicious engagement cake with vanilla flavor"
+  },
+  {
+    "name": "Engagement Cake 2",
+    "price": "25",
+    "id": 50,
+    "brand": "Brand B",
+    "category": "engagement",
+    "image": "https://example.com/cake2.jpg",
+    "description": "Exquisite engagement cake with chocolate flavor"
+  },
+  {
+    "name": "Engagement Cake 3",
+    "price": "30",
+    "id": 51,
+    "brand": "Brand C",
+    "category": "engagement",
+    "image": "https://example.com/cake3.jpg",
+    "description": "Beautiful engagement cake with strawberry flavor"
+  },
+  {
+    "name": "Engagement Cake 4",
+    "price": "22",
+    "id": 52,
+    "brand": "Brand D",
+    "category": "engagement",
+    "image": "https://example.com/cake4.jpg",
+    "description": "Elegant engagement cake with caramel flavor"
+  },
+  {
+    "name": "Engagement Cake 5",
+    "price": "28",
+    "id": 53,
+    "brand": "Brand E",
+    "category": "engagement",
+    "image": "https://example.com/cake5.jpg",
+    "description": "Tasty engagement cake with lemon flavor"
+  },
+  {
+    "name": "Engagement Cake 6",
+    "price": "35",
+    "id": 54,
+    "brand": "Brand F",
+    "category": "engagement",
+    "image": "https://example.com/cake6.jpg",
+    "description": "Unique engagement cake with raspberry flavor"
+  },
+  {
+    "name": "Engagement Cake 7",
+    "price": "24",
+    "id": 55,
+    "brand": "Brand G",
+    "category": "engagement",
+    "image": "https://example.com/cake7.jpg",
+    "description": "Gorgeous engagement cake with almond flavor"
+  },
+  {
+    "name": "Engagement Cake 8",
+    "price": "29",
+    "id": 56,
+    "brand": "Brand H",
+    "category": "engagement",
+    "image": "https://example.com/cake8.jpg",
+    "description": "Delightful engagement cake with pistachio flavor"
+  },
+  {
+    "name": "Engagement Cake 9",
+    "price": "26",
+    "id": 57,
+    "brand": "Brand I",
+    "category": "engagement",
+    "image": "https://example.com/cake9.jpg",
+    "description": "Mouth-watering engagement cake with coconut flavor"
+  },
+  {
+    "name": "Engagement Cake 10",
+    "price": "32",
+    "id": 58,
+    "brand": "Brand J",
+    "category": "engagement",
+    "image": "https://example.com/cake10.jpg",
+    "description": "Scrumptious engagement cake with hazelnut flavor"
+  },
+  {
+    "name": "Engagement Cake 11",
+    "price": "27",
+    "id": 59,
+    "brand": "Brand K",
+    "category": "engagement",
+    "image": "https://example.com/cake11.jpg",
+    "description": "Savory engagement cake with pineapple flavor"
+  },
+  {
+    "name": "Engagement Cake 12",
+    "price": "23",
+    "id": 60,
+    "brand": "Brand L",
+    "category": "engagement",
+    "image": "https://example.com/cake12.jpg",
+    "description": "Decadent engagement cake with mocha flavor"
+  },
+  {
+    "name": "Engagement Cake 13",
+    "price": "31",
+    "id": 61,
+    "brand": "Brand M",
+    "category": "engagement",
+    "image": "https://example.com/cake13.jpg",
+    "description": "Irresistible engagement cake with mint flavor"
+  },
+  {
+    "name": "Engagement Cake 14",
+    "price": "33",
+    "id": 62,
+    "brand": "Brand N",
+    "image": "https://example.com/cake14.jpg",
+    "category": "engagement",
+    "description": "Luxurious engagement cake with caramelized nuts"
+  },
+  {
+    "name": "Engagement Cake 15",
+    "price": "21",
+    "id": 63,
+    "brand": "Brand O",
+    "image": "https://example.com/cake15.jpg",
+    "description": "Flavorful engagement cake with coffee flavor",
+    "category": "engagement"
+  },
+  {
+    "name": "Engagement Cake 16",
+    "price": "34",
+    "id": 64,
+    "brand": "Brand P",
+    "image": "https://example.com/cake16.jpg",
+    "description": "Exotic engagement cake with passion fruit flavor",
+    "category": "engagement"
+  }
+]
