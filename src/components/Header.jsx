@@ -107,11 +107,11 @@ function Header() {
         <AiOutlineSearch size={30} color="#000" className="seacrh-icon" />
       </div>
       <div className="cart ">
-        <a href="#">
+        <NavLink to="cart">
           <Badge badgeContent={4} color="error">
             <AiOutlineShopping size={25} color="#fff" />
           </Badge>
-        </a>
+        </NavLink>
       </div>
     </nav>
   );

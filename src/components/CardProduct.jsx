@@ -2,14 +2,14 @@ import React from "react";
 import CardImage from "./CardImage";
 import PrimaryButton from "./PrimaryButton";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-// import { colors } from "../assets/style/color";
 import { images } from "../assets/images/images";
 import { useNavigate } from "react-router-dom";
-
-function CardProduct({ img, name, price, id, classname }) {
+import { AiFillCheckCircle } from "react-icons/ai";
+function CardProduct({ img, name, price, id, classname, handleAdd }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("detailProduct");
+    // console.log(id);
+    navigate("/detailProduct", { state: { id, img, price, name } });
   };
   return (
     <div style={{ width: "100%" }} className="card-product">
@@ -26,7 +26,7 @@ function CardProduct({ img, name, price, id, classname }) {
         <p className="card-product-name">{name}</p>
         <p className="card-product-price">${price}</p>
       </div>
-      <button className="add-btn">
+      <button className="add-btn" onClick={() => handleAdd(name, id)}>
         <span style={{ marginRight: "20px" }}>Add to cart</span>{" "}
         <AiOutlineShoppingCart size={25} color="#fff" />
       </button>
