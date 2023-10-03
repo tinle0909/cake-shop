@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import AllProducts from "./pages/AllProducts";
 import DetailProduct from "./pages/DetailProduct";
+import Cart from "./pages/Cart";
 
 function App() {
   const getProduct = useProductStore((state) => state.getProducts);
@@ -22,6 +23,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/products/:category" element={<AllProducts />} />
         <Route path="/detailProduct" element={<DetailProduct />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer />
     </>

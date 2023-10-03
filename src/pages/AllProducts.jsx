@@ -8,8 +8,11 @@ import { colors } from "../assets/style/color";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { useParams } from "react-router-dom";
-import { useProductStore } from "../zustand/store";
-import { Alert, Space, Spin } from "antd";
+import { Alert, Space, Spin, Modal } from "antd";
+import PrimaryButton from "../components/PrimaryButton";
+import { AiFillCheckCircle } from "react-icons/ai";
+import { MdTaskAlt } from "react-icons/md";
+import { useCartStore, useProductStore } from "../zustand/store";
 
 function AllProducts() {
   const { category } = useParams();
@@ -65,6 +68,8 @@ function AllProducts() {
                   img={item.image}
                   name={item.name}
                   price={item.price}
+                  id={item.id}
+                  handleAdd={handleAdd}
                 />
               </Grid>
             );
@@ -117,48 +122,88 @@ function AllProducts() {
     filterCategory();
     return () => {};
   }, [category]);
+  const [showModal, setShowModal] = useState(false);
+  const [nameCakeModal, setNameCakeModal] = useState("");
+  const { addCart, carts, updateQuantity } = useCartStore((state) => state);
+  const closeModal = () => {
+    setShowModal(false);
+  };
+  const handleAdd = (name, id) => {
+    // const item = carts.find((product) => product.id === id);
+    // if (item) {
+    //   const rs = carts.map((product) =>
+    //     product.id === item.id
+    //       ? { ...product, quantity: product.quantity + 1 }
+    //       : product
+    //   );
+    //   updateQuantity(rs);
+    // } else {
+    //   const a = carts.push({ ...item, quantity: 1 });
+    //   updateQuantity(a);
+    // }
+    // console.log(item);
+    setShowModal(true);
+    setNameCakeModal(name);
+  };
   return (
-    <div className="all-product-main">
-      <h1 className="all-product-title">{list[category].title}</h1>
-      {isLoading ? (
-        <Spin tip="Loading" size="large">
-          <div className="loading-content" />
-        </Spin>
-      ) : (
-        <>
-          <div className="wrapper-sort-bar">
-            <div className="wrapper-sort">
-              <BiSort color={colors.primary} />
-              <p className="sort-label">SORT BY</p>
-              <Select value={optionSort} onChange={handleChange} displayEmpty>
-                <MenuItem value={"a-z"}>A-Z</MenuItem>
-                <MenuItem value={"z-a"}>Z-A</MenuItem>
-                <MenuItem value={"low-high"}>Price-Low to High</MenuItem>
-                <MenuItem value={"high-low"}>Price-High to Low</MenuItem>
-              </Select>
+    <>
+      <div className="all-product-main">
+        <h1 className="all-product-title">{list[category].title}</h1>
+        {isLoading ? (
+          <Spin tip="Loading" size="large">
+            <div className="loading-content" />
+          </Spin>
+        ) : (
+          <>
+            <div className="wrapper-sort-bar">
+              <div className="wrapper-sort">
+                <BiSort color={colors.primary} />
+                <p className="sort-label">SORT BY</p>
+                <Select value={optionSort} onChange={handleChange} displayEmpty>
+                  <MenuItem value={"a-z"}>A-Z</MenuItem>
+                  <MenuItem value={"z-a"}>Z-A</MenuItem>
+                  <MenuItem value={"low-high"}>Price-Low to High</MenuItem>
+                  <MenuItem value={"high-low"}>Price-High to Low</MenuItem>
+                </Select>
+              </div>
+              <div>{listProduct.length} Products</div>
             </div>
-            <div>{listProduct.length} Products</div>
+            {listProduct.length > 0 ? (
+              <>
+                <Items currentItems={currentItems} />
+                <Stack spacing={2} className="wrapper-pagination">
+                  <Pagination
+                    count={pageCount}
+                    boundaryCount={2}
+                    variant="outlined"
+                    shape="rounded"
+                    onChange={handlePageClick}
+                    className="pagination"
+                  />
+                </Stack>
+              </>
+            ) : (
+              <div className="text-center">Dont't have any cake.</div>
+            )}
+          </>
+        )}
+      </div>
+      <Modal open={showModal} onOk={closeModal} footer={null} closeIcon={false}>
+        <div className="">
+          <p className="modal-title-wrapper">
+            <span className="modal-title">Successfully !</span>
+            <MdTaskAlt color="#5DB166" size={40} />
+          </p>
+          <p className="text-center modal-text">
+            <span className="modal-name-product">{nameCakeModal}</span> is added
+            to cart successfully
+          </p>
+          <div className="flex justify-center">
+            <PrimaryButton text="OK" className="ok-btn" onClick={closeModal} />
           </div>
-          {listProduct.length > 0 ? (
-            <>
-              <Items currentItems={currentItems} />
-              <Stack spacing={2} className="wrapper-pagination">
-                <Pagination
-                  count={pageCount}
-                  boundaryCount={2}
-                  variant="outlined"
-                  shape="rounded"
-                  onChange={handlePageClick}
-                  className="pagination"
-                />
-              </Stack>
-            </>
-          ) : (
-            <div className="text-center">Dont't have any cake.</div>
-          )}
-        </>
-      )}
-    </div>
+        </div>
+      </Modal>
+    </>
   );
 }
 
