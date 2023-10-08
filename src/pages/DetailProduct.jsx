@@ -1,30 +1,68 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import { Select, Space, Modal, Button } from "antd";
 import { images } from "../assets/images/images";
 import { useNavigate, useLocation } from "react-router-dom";
 import { colors } from "../assets/style/color";
 import PrimaryButton from "../components/PrimaryButton";
-import { AiFillCheckCircle } from "react-icons/ai";
+import { AiFillCheckCircle, AiOutlineZoomIn } from "react-icons/ai";
+import ImageViewer from "react-simple-image-viewer";
+import { useCartStore, useProductStore } from "../zustand/store";
+import { MdTaskAlt } from "react-icons/md";
 
-function DetailProduct({}) {
+function DetailProduct() {
   const location = useLocation();
   document.body.scrollIntoView({ block: "start" });
   const { id, img, price, name } = location.state;
+  const products = useProductStore((state) => state.products);
   const [option, setOption] = useState({
     size: "",
     type: "",
   });
+  const { addCart, carts, updateQuantity } = useCartStore((state) => state);
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const openImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage("");
+    setIsViewerOpen(false);
+  };
+
   const handleChange = (key, value) => {
     setOption((pre) => ({ ...pre, [key]: value }));
   };
   const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
+  const [nameCakeModal, setNameCakeModal] = useState("");
   const openModal = () => {
     setShowModal(true);
   };
   const closeModal = () => {
     setShowModal(false);
+  };
+  const handleAdd = () => {
+    const item = carts.find((product) => product.id === id);
+    if (item) {
+      const rs = carts.map((product) =>
+        product.id === item.id
+          ? { ...product, quantity: product.quantity + 1 }
+          : product
+      );
+      updateQuantity(rs);
+    } else {
+      const newItem = products.find((product) => product.id === id);
+      console.log(item);
+      const a = [...carts, { ...newItem, quantity: 1 }];
+      console.log(a);
+      updateQuantity(a);
+    }
+    // console.log(item);
+    setShowModal(true);
+    setNameCakeModal(name);
   };
   return (
     <>
@@ -36,7 +74,12 @@ function DetailProduct({}) {
             className="flex justify-center"
             // style={{ backgroundColor: "red" }}
           >
-            <img src={img} alt="" className="detail-product-img " />
+            <img
+              src={img}
+              alt=""
+              className="detail-product-img "
+              onClick={() => openImageViewer(0)}
+            />
           </Grid>
           <Grid xs={12} md={6}>
             <div className="detail-product-content">
@@ -101,7 +144,7 @@ function DetailProduct({}) {
               <PrimaryButton
                 text="Add to cart"
                 className="add-btn detail-add-btn"
-                onClick={openModal}
+                onClick={handleAdd}
               />
             </div>
           </Grid>
@@ -145,6 +188,15 @@ function DetailProduct({}) {
           </div>
         </div>
       </Modal>
+      {isViewerOpen && (
+        <ImageViewer
+          src={[img]}
+          currentIndex={currentImage}
+          disableScroll={false}
+          closeOnClickOutside={true}
+          onClose={closeImageViewer}
+        />
+      )}
     </>
   );
 }

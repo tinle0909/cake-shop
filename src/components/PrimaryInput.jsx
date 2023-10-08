@@ -1,6 +1,14 @@
 import React from "react";
 
-function PrimaryInput({ placeholder, color, background, type = "text" }) {
+function PrimaryInput({
+  placeholder,
+  color,
+  background,
+  type = "text",
+  value,
+  onChange,
+  className,
+}) {
   return (
     <div>
       <input
@@ -11,6 +19,9 @@ function PrimaryInput({ placeholder, color, background, type = "text" }) {
         }}
         placeholder={placeholder}
         type={type}
+        value={value}
+        onChange={onChange}
+        className={`primary-input ${className}`}
       />
     </div>
   );

@@ -118,6 +118,7 @@ function AllProducts() {
     handleSort(event.target.value);
   };
   useEffect(() => {
+    document.body.scrollIntoView({ block: "start" });
     setIsLoading(true);
     filterCategory();
     return () => {};
@@ -129,18 +130,21 @@ function AllProducts() {
     setShowModal(false);
   };
   const handleAdd = (name, id) => {
-    // const item = carts.find((product) => product.id === id);
-    // if (item) {
-    //   const rs = carts.map((product) =>
-    //     product.id === item.id
-    //       ? { ...product, quantity: product.quantity + 1 }
-    //       : product
-    //   );
-    //   updateQuantity(rs);
-    // } else {
-    //   const a = carts.push({ ...item, quantity: 1 });
-    //   updateQuantity(a);
-    // }
+    const item = carts.find((product) => product.id === id);
+    if (item) {
+      const rs = carts.map((product) =>
+        product.id === item.id
+          ? { ...product, quantity: product.quantity + 1 }
+          : product
+      );
+      updateQuantity(rs);
+    } else {
+      const newItem = products.find((product) => product.id === id);
+      console.log(item);
+      const a = [...carts, { ...newItem, quantity: 1 }];
+      console.log(a);
+      updateQuantity(a);
+    }
     // console.log(item);
     setShowModal(true);
     setNameCakeModal(name);
