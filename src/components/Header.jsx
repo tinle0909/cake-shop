@@ -10,8 +10,12 @@ import { useNavigate, NavLink } from "react-router-dom";
 import Badge from "@mui/material/Badge";
 import { Dropdown, message, Space } from "antd";
 import styled from "styled-components";
+import { useCartStore } from "../zustand/store";
+
 function Header() {
   const navigate = useNavigate();
+  const { carts } = useCartStore((state) => state);
+
   const Title = styled.p`
     color: ${colors.gray};
     text-align: center;
@@ -108,7 +112,7 @@ function Header() {
       </div>
       <div className="cart ">
         <NavLink to="cart">
-          <Badge badgeContent={4} color="error">
+          <Badge badgeContent={carts.length} color="error">
             <AiOutlineShopping size={25} color="#fff" />
           </Badge>
         </NavLink>

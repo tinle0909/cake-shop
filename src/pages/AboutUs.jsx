@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import React from "react";
 import { images } from "../assets/images/images";
+import PrimaryButton from "../components/PrimaryButton";
 
 function AboutUs() {
   return (
@@ -77,6 +78,59 @@ function AboutUs() {
           </Grid>
         </Grid>
       </div>
+      <Grid container spacing={6}>
+        <Grid xs={12} md={6}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.547141078503!2d106.70816237525837!3d10.845926657907441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f05f2302f9f%3A0x8d252d2bb56b804c!2sFPT%20Arena%20Multimedia!5e0!3m2!1sen!2s!4v1696513980601!5m2!1sen!2s"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </Grid>
+        <Grid xs={12} md={6} className="p-6">
+          <div className="p-6 flex flex-col items-center gap-6">
+            <h2 className="text-2xl">Contact Us</h2>
+            <div className="contact-input-wrapper">
+              <p htmlFor="fullname" className="contact-field">
+                Fullname
+              </p>
+              <input
+                type="text"
+                id="fullname"
+                className="contact-input"
+                placeholder="Enter fullname"
+              />
+            </div>
+            <div className="contact-input-wrapper">
+              <p htmlFor="phone" className="contact-field">
+                Phone
+              </p>
+              <input
+                type="text"
+                id="phone"
+                className="contact-input"
+                placeholder="Enter phone"
+              />
+            </div>
+            <div lassName="contact-input-wrapper">
+              <p htmlFor="email" className="contact-field">
+                Email
+              </p>
+              <input
+                type="text"
+                id="email"
+                className="contact-input"
+                placeholder="Enter email"
+              />
+            </div>
+            <div>
+              <PrimaryButton text="SEND" className="contact-send" />
+            </div>
+          </div>
+        </Grid>
+      </Grid>
     </div>
   );
 }

@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import PrimaryButton from "@components/PrimaryButton";
-import { useProductStore } from "../zustand/store";
 import { colors } from "../assets/style/color";
 import { images } from "../assets/images/images";
 import CardProduct from "../components/CardProduct";
@@ -9,10 +8,45 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdPayments, MdDeliveryDining } from "react-icons/md";
 import Grid from "@mui/material/Unstable_Grid2";
 import { useNavigate } from "react-router-dom";
+import { useCartStore, useProductStore } from "../zustand/store";
+import { MdTaskAlt } from "react-icons/md";
+import { Modal } from "antd";
 
 function Home() {
   const products = useProductStore((state) => state.products);
   const navigate = useNavigate();
+  const { addCart, carts, updateQuantity } = useCartStore((state) => state);
+  const [showModal, setShowModal] = useState(false);
+  const [nameCakeModal, setNameCakeModal] = useState("");
+  const closeModal = () => {
+    setShowModal(false);
+  };
+  const anniversaryCakes = products
+    .filter((item) => item.category === "anniversary")
+    .slice(0, 4);
+  const birthdayCakes = products
+    .filter((item) => item.category === "birthday")
+    .slice(0, 4);
+  const handleAdd = (name, id) => {
+    const item = carts.find((product) => product.id === id);
+    if (item) {
+      const rs = carts.map((product) =>
+        product.id === item.id
+          ? { ...product, quantity: product.quantity + 1 }
+          : product
+      );
+      updateQuantity(rs);
+    } else {
+      const newItem = products.find((product) => product.id === id);
+      console.log(item);
+      const a = [...carts, { ...newItem, quantity: 1 }];
+      console.log(a);
+      updateQuantity(a);
+    }
+    // console.log(item);
+    setShowModal(true);
+    setNameCakeModal(name);
+  };
   return (
     <div className="home-main">
       <section
@@ -32,15 +66,16 @@ function Home() {
         />
       </section>
       <section className="home-best-seller">
-        <h1>Best Seller Cakes</h1>
+        <h1>Birthday Cakes</h1>
         <div className="best-seller-product">
           <Grid container spacing={6}>
-            {[1, 2, 3, 4].map(() => (
-              <Grid sm={6} md={3}>
+            {birthdayCakes.map((item) => (
+              <Grid sm={6} xs={12} md={3} key={item.id}>
                 <CardProduct
-                  img={images.birthday.h3}
-                  name={"Cheese Cake"}
-                  price={10}
+                  img={item.image}
+                  name={item.name}
+                  price={item.price}
+                  handleAdd={handleAdd}
                 />
               </Grid>
             ))}
@@ -54,6 +89,9 @@ function Home() {
             backgroundHover={colors.white}
             colorTextHover={colors.primary}
             className={"primary-button"}
+            onClick={() => {
+              navigate("/products/birthday");
+            }}
           />
         </div>
       </section>
@@ -107,15 +145,16 @@ function Home() {
       </section>
 
       <section className="home-best-seller">
-        <h1>Event Cakes</h1>
+        <h1>Anniversary Cakes</h1>
         <div className="best-seller-product">
           <Grid container spacing={6}>
-            {[1, 2, 3, 4].map(() => (
-              <Grid sm={6} md={3}>
+            {anniversaryCakes.map((item) => (
+              <Grid sm={6} xs={12} md={3} key={item.id}>
                 <CardProduct
-                  img={images.birthday.h3}
-                  name={"Cheese Cake"}
-                  price={10}
+                  img={item.image}
+                  name={item.name}
+                  price={item.price}
+                  handleAdd={handleAdd}
                 />
               </Grid>
             ))}
@@ -129,6 +168,9 @@ function Home() {
             backgroundHover={colors.white}
             colorTextHover={colors.primary}
             className={"primary-button"}
+            onClick={() => {
+              navigate("/products/anniversary");
+            }}
           />
         </div>
       </section>
@@ -170,6 +212,21 @@ function Home() {
           cake.
         </p>
       </section>
+      <Modal open={showModal} onOk={closeModal} footer={null} closeIcon={false}>
+        <div className="">
+          <p className="modal-title-wrapper">
+            <span className="modal-title">Successfully !</span>
+            <MdTaskAlt color="#5DB166" size={40} />
+          </p>
+          <p className="text-center modal-text">
+            <span className="modal-name-product">{nameCakeModal}</span> is added
+            to cart successfully
+          </p>
+          <div className="flex justify-center">
+            <PrimaryButton text="OK" className="ok-btn" onClick={closeModal} />
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 }
