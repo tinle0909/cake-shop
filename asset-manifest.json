@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cake-shop/static/css/main.f7fac7b5.css",
-    "main.js": "/cake-shop/static/js/main.27e707ef.js",
+    "main.js": "/cake-shop/static/js/main.58af0564.js",
     "static/js/651.4e0af63c.chunk.js": "/cake-shop/static/js/651.4e0af63c.chunk.js",
     "static/media/banner.jpg": "/cake-shop/static/media/banner.f2c9916d95f335f2aba4.jpg",
     "static/media/about4.jpg": "/cake-shop/static/media/about4.20505a679d594f6d2dba.jpg",
@@ -11,11 +11,11 @@
     "static/media/logo.png": "/cake-shop/static/media/logo.69a7fed8cc714a375032.png",
     "index.html": "/cake-shop/index.html",
     "main.f7fac7b5.css.map": "/cake-shop/static/css/main.f7fac7b5.css.map",
-    "main.27e707ef.js.map": "/cake-shop/static/js/main.27e707ef.js.map",
+    "main.58af0564.js.map": "/cake-shop/static/js/main.58af0564.js.map",
     "651.4e0af63c.chunk.js.map": "/cake-shop/static/js/651.4e0af63c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7fac7b5.css",
-    "static/js/main.27e707ef.js"
+    "static/js/main.58af0564.js"
   ]
 }
