@@ -20,8 +20,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cake-shop/home" element={<Home />} />
+        <Route index path="/cake-shop" element={<Home />} />
+        <Route path="/cake-shop/" element={<Home />} />
+        <Route index path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/products/:category" element={<AllProducts />} />
         <Route path="/detailProduct" element={<DetailProduct />} />

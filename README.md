@@ -14,7 +14,7 @@ Documentations : https://github.com/tinle0909/cake-shop/tree/main/Documentations
 
 =======================================
 
-Published website :
+Published website : https://tinle0909.github.io/cake-shop/
 
 =======================================
 
