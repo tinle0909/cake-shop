@@ -20,7 +20,7 @@ function PrimaryInput({
         placeholder={placeholder}
         type={type}
         value={value}
-        onChange={onChange}
+        onChange={(e) => onChange(e)}
         className={`primary-input ${className}`}
       />
     </div>

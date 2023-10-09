@@ -6,8 +6,10 @@ import PrimaryButton from "../components/PrimaryButton";
 import { colors } from "../assets/style/color";
 import { Modal } from "antd";
 import { MdTaskAlt } from "react-icons/md";
+import { useCartStore } from "../zustand/store";
 
 function Checkout() {
+  const { carts, updateQuantity, removeCart } = useCartStore((state) => state);
   const location = useLocation();
   const { products, promotion } = location.state;
   const [infoUser, setInfoUser] = useState({
@@ -29,6 +31,17 @@ function Checkout() {
   const openModal = () => {
     setShowModal(true);
   };
+  const handleCheckout = () => {
+    if (!infoUser.fullname || !infoUser.address || !infoUser.phone) {
+      alert("Please enter information");
+      return;
+    }
+    updateQuantity([]);
+    openModal();
+  };
+  const handleChange = (key, value) => {
+    setInfoUser((pre) => ({ ...pre, [key]: value }));
+  };
   return (
     <>
       <div className="checkout-wrapper">
@@ -42,6 +55,8 @@ function Checkout() {
                 <PrimaryInput
                   placeholder={"Enter fullname"}
                   className="checkout-input"
+                  value={infoUser.fullname}
+                  onChange={(e) => handleChange("fullname", e.target.value)}
                 />
               </div>
               <div>
@@ -51,6 +66,8 @@ function Checkout() {
                 <PrimaryInput
                   placeholder={"Enter Address"}
                   className="checkout-input"
+                  value={infoUser.address}
+                  onChange={(e) => handleChange("address", e.target.value)}
                 />
               </div>
               <div>
@@ -60,6 +77,8 @@ function Checkout() {
                 <PrimaryInput
                   placeholder={"Enter phone"}
                   className="checkout-input"
+                  value={infoUser.phone}
+                  onChange={(e) => handleChange("phone", e.target.value)}
                 />
               </div>
               <div>
@@ -124,7 +143,7 @@ function Checkout() {
                 <PrimaryButton
                   text="PLACE ORDER"
                   className="checkou-btn"
-                  onClick={openModal}
+                  onClick={handleCheckout}
                 />
               </div>
             </div>
