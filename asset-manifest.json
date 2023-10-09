@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cake-shop/home/static/css/main.f7fac7b5.css",
-    "main.js": "/cake-shop/home/static/js/main.7bf5105e.js",
-    "static/js/651.4e0af63c.chunk.js": "/cake-shop/home/static/js/651.4e0af63c.chunk.js",
-    "static/media/banner.jpg": "/cake-shop/home/static/media/banner.f2c9916d95f335f2aba4.jpg",
-    "static/media/about4.jpg": "/cake-shop/home/static/media/about4.20505a679d594f6d2dba.jpg",
-    "static/media/about5.jpg": "/cake-shop/home/static/media/about5.b97cd44e3c3205436de2.jpg",
-    "static/media/banner4.jpg": "/cake-shop/home/static/media/banner4.f27037cd453803983272.jpg",
-    "static/media/about3.jpeg": "/cake-shop/home/static/media/about3.d31495065c8e252fdfb7.jpeg",
-    "static/media/logo.png": "/cake-shop/home/static/media/logo.69a7fed8cc714a375032.png",
-    "index.html": "/cake-shop/home/index.html",
-    "main.f7fac7b5.css.map": "/cake-shop/home/static/css/main.f7fac7b5.css.map",
-    "main.7bf5105e.js.map": "/cake-shop/home/static/js/main.7bf5105e.js.map",
-    "651.4e0af63c.chunk.js.map": "/cake-shop/home/static/js/651.4e0af63c.chunk.js.map"
+    "main.css": "/cake-shop/static/css/main.f7fac7b5.css",
+    "main.js": "/cake-shop/static/js/main.27e707ef.js",
+    "static/js/651.4e0af63c.chunk.js": "/cake-shop/static/js/651.4e0af63c.chunk.js",
+    "static/media/banner.jpg": "/cake-shop/static/media/banner.f2c9916d95f335f2aba4.jpg",
+    "static/media/about4.jpg": "/cake-shop/static/media/about4.20505a679d594f6d2dba.jpg",
+    "static/media/about5.jpg": "/cake-shop/static/media/about5.b97cd44e3c3205436de2.jpg",
+    "static/media/banner4.jpg": "/cake-shop/static/media/banner4.f27037cd453803983272.jpg",
+    "static/media/about3.jpeg": "/cake-shop/static/media/about3.d31495065c8e252fdfb7.jpeg",
+    "static/media/logo.png": "/cake-shop/static/media/logo.69a7fed8cc714a375032.png",
+    "index.html": "/cake-shop/index.html",
+    "main.f7fac7b5.css.map": "/cake-shop/static/css/main.f7fac7b5.css.map",
+    "main.27e707ef.js.map": "/cake-shop/static/js/main.27e707ef.js.map",
+    "651.4e0af63c.chunk.js.map": "/cake-shop/static/js/651.4e0af63c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f7fac7b5.css",
-    "static/js/main.7bf5105e.js"
+    "static/js/main.27e707ef.js"
   ]
 }
